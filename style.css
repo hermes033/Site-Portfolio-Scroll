@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    overflow: auto;
+    background-image: linear-gradient(to right, #141414, #1e201e, #2b2b2c);
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo img {
+    cursor: pointer;
+}
+
+header .nav {
+    width: 25%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    transform-origin: left;
+    border-bottom: 1.5px solid white;
+}
+
+header .button .hireMe {
+    color: white;
+    background: rgb(34, 115, 213);
+    border: none;
+    cursor: pointer;
+    width: 10em;
+    height: 4em;
+    border-radius: 8px;
+    transition: 0.5s ease-out;
+}
+
+header .button .hireMe:hover {
+    background: rgb(4, 175, 187);
+}
+
+/*SECTION*/
+
+section .box {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    margin: 5em auto;
+}
+
+section .box .blur {
+    margin-top: 2em;
+    margin-left: 2em;
+    position: absolute;
+    box-shadow: 0 0 1000px 70px rgb(34, 115, 213);
+    z-index: -100;
+}
+
+
+section .nineText {
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.8px white;
+}
+
+section h1 {
+    font-size: 3.5em;
+    color: white;
+    letter-spacing: 0.05em;
+    font-family: 'Poppins', sans-serif;
+}
+
+section h4 {
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.06em;
+}
+
+section .right img {
+    height: 28em;
+    width: 30em;
+}
+
+section .left p {
+    color: white;
+    font-weight: lighter;
+    width: 70%;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+section .left .hireMe {
+    color: white;
+    background: rgb(34, 115, 213);
+    border: none;
+    cursor: pointer;
+    width: 10em;
+    height: 4em;
+    margin-top: 2em;
+    border-radius: 8px;
+    transition: 0.5s ease-out;
+}
+
+section .left .hireMe:hover {
+    background: rgb(4, 175, 187);
+}
+
+/* OUR FEATURES */
+
+section .box2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section .box2 p {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section .box2 .container {
+    margin-top: 2em;
+    width: 100%;
+    height: 17em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section .box2 .container .qutu {
+    transition: 0.5s all;
+    margin-top: 0.5em;
+    background: rgb(49, 49, 49);
+    width: 21em;
+    height: 16em;
+    border-radius: 1em;
+}
+
+section .box2 .container .qutu:hover {
+    border: 1px solid white;
+    border-radius: 1em;
+}
+
+section .box2 .container .qutu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+section .box2 .container .qutu .qutuIcon {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(34, 115, 213);
+    border-radius: 6px;
+    padding: 0.7em 1em;
+}
+
+section .box2 .container .qutu .headText {
+    margin-left: 0.5em;
+    font-size: 1.3em;
+}
+
+section .box2 .container .qutu .loremText {
+    margin-left: 0.5em;
+    font-size: 1em;
+    font-weight: 50;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+section .box2 .container .qutu button {
+    margin-left: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: 0.3s all;
+}
+
+section .box2 .container .qutu button:hover {
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    background: transparent;
+    color: rgb(34, 115, 213);
+}
+
+/* SECTION BOX3  */
+
+section .box3 {
+    text-align: center;
+    height: 50em;
+}
+
+section .box3 .prpText {
+    margin-top: 3em;
+    color: white;
+    font-size: 2.7em;
+    font-weight: 600;
+}
+
+section .box3 .headbox3Text {
+    color: white;
+    width: 35%;
+    margin: 2em auto;
+}
+
+section .box3 .box3Container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 72%;
+    margin: 5em auto;
+}
+
+section .box3 .box3Container .box3boxs {
+    background: rgb(49, 49, 49);
+    width: 21em;
+    height: 30em;
+    border-radius: 20px;
+    transition: 0.6s all;
+}
+
+section .box3 .box3Container .box3boxs:hover {
+    border: 1px solid white;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25em;
+    text-align: left;
+    margin-left: 2em;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder .topText {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder .dollar {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder .line {
+    color: white;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15em;
+}
+
+section .box3 .box3Container .box3boxs .box3boxsBorder .iconText {
+    color: white;
+    font-style: normal;
+}
+
+section .box3 .box3Container .box3boxs .jnBox3 {
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 22em;
+    color: white;
+    height: 4.5em;
+    transition: 0.6s all;
+}
+
+section .box3 .box3Container .box3boxs .jnBox3:hover {
+    border: 2px solid rgb(34, 115, 213);
+    background: rgb(34, 115, 213);
+    color: white;
+}
+
+/* FOOTER */
+
+footer .box4 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 25em;
+    margin-top: 6em;
+}
+
+footer .box4 .orta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20em;
+    width: 18%;
+}
+
+footer .box4 .orta .text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 10em;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .box4 .orta .text p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 10em;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.6s all;
+    cursor: pointer;
+}
+
+footer .box4 .orta .text p:hover {
+    color: rgb(34, 115, 213);
+}
+
+
+
+footer .box4 .orta {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .box4 .orta .logo {
+    height: 7em;
+    width: 23em;
+    background-image: url(./images/rent\ a\ car.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer .box4 .orta .icons i {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 1em;
+    border-radius: 50%;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+footer .box4 .orta .icons {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-around;
+}
+
+footer .box4 .orta .icons i:hover {
+    border: 1px solid rgb(34, 115, 213);
+    color: rgb(34, 115, 213);
+}
+
+footer .box4 .orta .topText {
+    font-size: 1.5em;
+}
+
+footer .loremText {
+    color: white;
+    font-weight: 50;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    margin-left: 7em;
+}
+
+footer p {
+    color: white;
+}
+
+footer .endText p {
+    font-size: 0.85em;
+    text-align: center;
+    color: white;
+    font-weight: 50;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+footer .box4 .blur {
+    margin-top: 5em;
+    left: 7em;
+    position: absolute;
+    box-shadow: 0 0 1000px 100px rgb(34, 115, 213);
+}
+
+/*!-*********************************************************************************************/
+
+/* RESPONSIVE MAX 900PX */
+
+@media (width < 900px) {
+
+    /*Header*/
+
+    header .nav {
+        display: none;
+    }
+
+    header .button .hireMe {
+        width: 7em;
+    }
+
+    header .logo img {
+        width: 180px;
+        margin-top: 0.5em;
+    }
+
+    /*Section Home*/
+
+    section .box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section .right img {
+        height: 20em;
+        width: 20em;
+    }
+
+    section h1 {
+        font-size: 2.5em;
+        color: white;
+        letter-spacing: 0.05em;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section h4 {
+        color: white;
+        font-size: 1em;
+        font-weight: 200;
+        letter-spacing: 0.06em;
+    }
+
+    section .left p {
+        color: white;
+        font-weight: lighter;
+        font-size: small;
+        width: 100%;
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*Section Our Features*/
+
+    section .box2 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section .box2 p {
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    section .box2 .container {
+        margin: 19em auto;
+        width: 100%;
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section .box2 .container .qutu {
+        margin: 0.5em auto;
+        transition: 0.5s all;
+        background: rgb(49, 49, 49);
+        width: 90%;
+        height: 16em;
+        border-radius: 1em;
+    }
+
+    section .box2 .container .qutu .qutuIcon {
+        margin: 0.5em auto;
+        font-size: 1.5em;
+        color: white;
+        background-color: rgb(34, 115, 213);
+        border-radius: 6px;
+        padding: 0.7em 1em;
+    }
+
+    section .box2 .container .qutu .headText {
+        margin: 0.5em auto;
+        font-size: 1.3em;
+    }
+
+    section .box2 .container .qutu .loremText {
+        margin-left: 0.5em;
+        font-size: 1em;
+        font-weight: 50;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section .box2 .container .qutu button {
+        margin: 0.5em auto;
+        cursor: pointer;
+        font-size: 1em;
+        border: none;
+        background: transparent;
+        color: white;
+        transition: 0.3s all;
+    }
+
+    /* SECTION BOX3  */
+
+    section .box3 {
+        margin: 30em auto;
+        text-align: center;
+        height: 50em;
+    }
+
+    section .box3 .prpText {
+        margin-top: 3em;
+        color: white;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    section .box3 .headbox3Text {
+        color: white;
+        width: 100%;
+        margin: 2em auto;
+        font-size: 0.9em;
+    }
+
+    section .box3 .box3Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 72%;
+        margin: 5em auto;
+        height: 93em;
+    }
+
+    section .box3 .box3Container .box3boxs {
+        background: rgb(49, 49, 49);
+        margin: 0 auto;
+        width: 17em;
+        margin: 0 auto;
+        height: 30em;
+        border-radius: 20px;
+        transition: 0.6s all;
+    }
+
+    section .box3 .box3Container .box3boxs:hover {
+        border: 1px solid white;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 25em;
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder .topText {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder .dollar {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder .line {
+        color: white;
+        width: 100%;
+        display: none;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 15em;
+    }
+
+    section .box3 .box3Container .box3boxs .box3boxsBorder .iconText {
+        color: white;
+        font-style: normal;
+    }
+
+    section .box3 .box3Container .box3boxs .jnBox3 {
+        background: transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 2px solid white;
+        width: 16em;
+        color: white;
+        height: 4.5em;
+        transition: 0.6s all;
+    }
+
+    section .box3 .box3Container .box3boxs .jnBox3:hover {
+        border: 2px solid rgb(34, 115, 213);
+        background: rgb(34, 115, 213);
+        color: white;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    body {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: absolute;
+        margin: 25em auto;
+    }
+
+    footer .box4 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 18em;
+        margin: 6em auto;
+    }
+
+    footer .box4 .orta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20em;
+        width: 60%;
+    }
+
+    footer .box4 .orta .text {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 10em;
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer .box4 .orta .text p {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 10em;
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.6s all;
+        cursor: pointer;
+        font-size: 0.5em;
+    }
+
+    footer #sagEle {
+        margin-top: 1.5em;
+        margin-right: 2em;
+    }
+
+    footer .box4 .orta .text p:hover {
+        color: rgb(34, 115, 213);
+    }
+
+    footer .box4 .orta {
+        width: 100%;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer .box4 .orta .logo {
+        height: 5em;
+        width: 13em;
+        background-image: url(./images/rent\ a\ car.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    footer .box4 .orta .icons i {
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        padding: 6px;
+        font-size: 0.6em;
+        border-radius: 50%;
+        transition: 0.5s all;
+        cursor: pointer;
+    }
+
+    footer .box4 .orta .icons {
+        display: flex;
+        margin: 0 auto;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    footer .box4 .orta .icons i:hover {
+        border: 1px solid rgb(34, 115, 213);
+        color: rgb(34, 115, 213);
+    }
+
+    footer .box4 .orta .topText {
+        font-size: 1em;
+    }
+
+    footer .loremText {
+        color: white;
+        font-weight: 50;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.5em;
+        margin: 0 auto;
+        width: 54%;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    footer .endText p {
+        font-size: 0.6em;
+        text-align: center;
+        color: white;
+        font-weight: 50;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.05em;
+        margin: 0 auto;
+    }
+
+    footer .box4 .blur {
+        margin-top: 5em;
+        left: 7em;
+        position: absolute;
+        box-shadow: 0 0 1000px 50px rgb(34, 115, 213);
+    }
+
+
+}
